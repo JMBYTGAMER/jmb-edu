@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="jmb_blue">#155EEF</color>
+    <color name="jmb_navy">#102A56</color>
+    <color name="jmb_background">#F4F7FC</color>
+    <color name="jmb_text">#14213D</color>
+    <color name="jmb_muted">#64748B</color>
+</resources>
