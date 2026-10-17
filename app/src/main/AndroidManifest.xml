@@ -3,6 +3,8 @@
     <application
         android:allowBackup="false"
         android:label="JMB EDU"
+        android:icon="@drawable/ic_jmb_edu"
+        android:roundIcon="@drawable/ic_jmb_edu"
         android:supportsRtl="true"
         android:theme="@style/Theme.JMBEDU">
         <activity
