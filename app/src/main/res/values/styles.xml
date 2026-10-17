@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.JMBEDU" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#155EEF</item>
+        <item name="colorSecondary">#4F8BFF</item>
+        <item name="android:statusBarColor">#102A56</item>
+        <item name="android:navigationBarColor">#102A56</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
