@@ -77,7 +77,7 @@ class StudentActivity : AppCompatActivity() {
     private fun renderStudents() {
         val students = readStudents()
         studentListContainer.removeAllViews()
-        studentCountText.text = "Sample students (\u0024{students.length()})"
+        studentCountText.text = "Sample students (" + students.length() + ")"
         if (students.length() == 0) {
             studentListContainer.addView(TextView(this).apply {
                 text = "No sample students yet. Add one above to try the directory."
