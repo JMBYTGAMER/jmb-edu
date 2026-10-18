@@ -42,7 +42,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
         bindComingSoon(R.id.teachersButton, "Teacher directory")
-        bindComingSoon(R.id.attendanceButton, "Attendance")
+        findViewById<MaterialButton>(R.id.attendanceButton).setOnClickListener {
+            startActivity(Intent(this, AttendanceActivity::class.java)
+                .putExtra(EXTRA_DEMO_ROLE, demoRole))
+        }
         bindComingSoon(R.id.reportsButton, "Exams and reports")
         findViewById<MaterialButton>(R.id.signOutButton).setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
