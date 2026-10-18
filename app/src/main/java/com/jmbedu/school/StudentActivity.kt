@@ -18,6 +18,7 @@ import com.jmbedu.school.data.local.DemoStudent
 import com.jmbedu.school.data.local.JmbEduDatabase
 import com.jmbedu.school.data.repository.DemoStudentRepository
 import com.jmbedu.school.ui.students.DemoStudentsViewModel
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class StudentActivity : AppCompatActivity() {

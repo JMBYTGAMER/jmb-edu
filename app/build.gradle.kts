@@ -33,9 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-    kapt {
-        correctErrorTypes = true
-    }
+}
+
+kapt {
+    correctErrorTypes = true
 }
 
 dependencies {
