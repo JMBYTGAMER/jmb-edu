@@ -1,128 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/jmb_background"
-    android:fillViewport="true">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="JMB EDU"
-            android:textColor="@color/jmb_navy"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:text="Powered by Jobin Mathew Biju"
-            android:textColor="@color/jmb_muted"
-            android:textSize="14sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/hero_background"
-            android:orientation="vertical"
-            android:padding="22dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="LEARN  •  MANAGE  •  SUCCEED"
-                android:textColor="#D9E7FF"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Your school, organised."
-                android:textColor="@android:color/white"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="A school management workspace designed for everyday school tasks."
-                android:textColor="#E7EEFF"
-                android:textSize="14sp" />
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/jmb_background" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center_vertical" android:orientation="horizontal">
+            <ImageView android:layout_width="52dp" android:layout_height="52dp"
+                android:contentDescription="JMB EDU logo" android:src="@drawable/ic_jmb_edu" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="JMB EDU" android:textColor="@color/jmb_navy"
+                    android:textSize="25sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Powered by Jobin Mathew Biju" android:textColor="@color/jmb_muted"
+                    android:textSize="12sp" />
+            </LinearLayout>
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
-            android:text="School management"
-            android:textColor="@color/jmb_text"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
+        <TextView android:id="@+id/dashboardWelcome" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="25dp"
+            android:text="Welcome, Demo User" android:textColor="@color/jmb_text"
+            android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:id="@+id/dashboardRole" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="5dp"
+            android:text="Student preview • DEMO MODE" android:textColor="@color/jmb_blue"
+            android:textSize="13sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="18dp" android:background="@drawable/hero_background"
+            android:orientation="vertical" android:padding="22dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="LEARN  •  MANAGE  •  SUCCEED" android:textColor="#D9E7FF"
+                android:textSize="12sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:text="Your school, organised."
+                android:textColor="@android:color/white" android:textSize="25sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Explore the JMB EDU workspace and try the sample student directory."
+                android:textColor="#E7EEFF" android:textSize="14sp" />
+        </LinearLayout>
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            app:cardCornerRadius="18dp"
-            app:cardElevation="1dp"
-            app:strokeColor="#E0E8F5"
-            app:strokeWidth="1dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/studentsButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Students"
-                    app:icon="@android:drawable/ic_menu_myplaces"
-                    app:cornerRadius="12dp" />
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/teachersButton"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" app:cardBackgroundColor="#FFF7E6"
+            app:cardCornerRadius="14dp" app:cardElevation="0dp"
+            app:strokeColor="#F4D9A1" app:strokeWidth="1dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:text="DEMO MODE: records in the student demo are saved only on this device. They do not sync to a school or cloud. Do not enter real student data."
+                android:textColor="#75510A" android:textSize="12sp" />
+        </com.google.android.material.card.MaterialCardView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:text="School workspace"
+            android:textColor="@color/jmb_text" android:textSize="20sp" android:textStyle="bold" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" app:cardCornerRadius="18dp" app:cardElevation="1dp"
+            app:strokeColor="#E0E8F5" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <com.google.android.material.button.MaterialButton android:id="@+id/studentsButton"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Manage demo students" app:cornerRadius="12dp"
+                    app:icon="@android:drawable/ic_menu_myplaces" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/teachersButton"
                     style="@style/Widget.Material3.Button.OutlinedButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Teachers"
-                    app:icon="@android:drawable/ic_menu_manage"
-                    app:cornerRadius="12dp" />
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/attendanceButton"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:text="Teachers"
+                    app:cornerRadius="12dp" app:icon="@android:drawable/ic_menu_manage" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/attendanceButton"
                     style="@style/Widget.Material3.Button.OutlinedButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Attendance"
-                    app:icon="@android:drawable/ic_menu_agenda"
-                    app:cornerRadius="12dp" />
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/reportsButton"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:text="Attendance"
+                    app:cornerRadius="12dp" app:icon="@android:drawable/ic_menu_agenda" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/reportsButton"
                     style="@style/Widget.Material3.Button.OutlinedButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Exams &amp; reports"
-                    app:icon="@android:drawable/ic_menu_info_details"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:text="Exams &amp; reports"
+                    app:cornerRadius="12dp" app:icon="@android:drawable/ic_menu_info_details" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/signOutButton"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:text="Back to sign-in screen"
                     app:cornerRadius="12dp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:gravity="center"
-            android:text="Starter build • Core modules are being developed"
-            android:textColor="@color/jmb_muted"
-            android:textSize="12sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="18dp" android:gravity="center"
+            android:text="Early development build • Demo only"
+            android:textColor="@color/jmb_muted" android:textSize="12sp" />
     </LinearLayout>
 </ScrollView>

@@ -4,19 +4,25 @@
 
 Native Android school-management app built with Kotlin, XML Views, and Material Design 3.
 
-## Build an APK from a phone
-
-This repository includes a GitHub Actions workflow. Every push to `main` starts a cloud build, and you can also run it manually.
+## Build an APK using your phone
+GitHub Actions builds the debug APK in the cloud.
 
 1. Open the **Actions** tab in this repository.
 2. Select **Build JMB EDU APK**.
-3. Tap **Run workflow** and confirm.
-4. Open the completed workflow run.
-5. Under **Artifacts**, download **JMB-EDU-debug-APK**.
-6. Extract the ZIP on your phone and install `app-debug.apk`.
+3. Open the latest successful run.
+4. Under **Artifacts**, download **JMB-EDU-debug-APK**.
+5. Extract the ZIP and install `app-debug.apk` on an Android test device.
 
-## Current status
+The Releases page may also have the latest debug APK:
+https://github.com/JMBYTGAMER/jmb-edu/releases
 
-This is the first buildable UI foundation, not a finished school-management system. Student/teacher records, authentication, role enforcement, multi-school isolation, offline database, conflict-aware sync, backup, and reporting must be implemented and tested before real school data is used.
+## What works in this development build
+- Branded login screen and JMB EDU launcher icon.
+- Demo dashboard with role preview for Student, Teacher, Senior Teacher, Headmaster, School Admin, and Owner.
+- Student demo directory with add, view, and delete sample records.
+- Demo student records persist locally on the current device.
 
-Do not use this starter build for real student information.
+## Important limitations
+The role picker is only a **demo preview**. It is not authentication and does not grant real permissions. The sign-in button will not authenticate a real account until a backend is configured. Demo student records are stored locally on the device and do not sync to a school or cloud.
+
+Real authentication, server-enforced role-based access control, multi-school data isolation, encrypted/offline database, conflict-aware sync, backups, attendance, exams, reporting, and production QA still need to be implemented. Do not enter real student information or use this build as a production school system.

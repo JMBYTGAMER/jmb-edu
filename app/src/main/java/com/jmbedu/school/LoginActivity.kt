@@ -1,5 +1,6 @@
 package com.jmbedu.school
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.ArrayAdapter
@@ -24,15 +25,23 @@ class LoginActivity : AppCompatActivity() {
             val password = findViewById<TextInputEditText>(R.id.passwordInput).text?.toString().orEmpty()
             when {
                 !Patterns.EMAIL_ADDRESS.matcher(email).matches() ->
-                    findViewById<TextInputEditText>(R.id.emailInput).error = "Enter a valid email"
+                    findViewById<TextInputEditText>(R.id.emailInput).error = "Enter a valid email address"
                 password.isBlank() ->
                     findViewById<TextInputEditText>(R.id.passwordInput).error = "Enter your password"
                 else -> Toast.makeText(
                     this,
-                    "Login UI is ready. Secure authentication must be connected before accounts can sign in.",
+                    "Real account sign-in is not connected yet. Your password was not sent or saved. Use Explore Demo to preview the app.",
                     Toast.LENGTH_LONG
                 ).show()
             }
+        }
+
+        findViewById<MaterialButton>(R.id.previewDemoButton).setOnClickListener {
+            val email = findViewById<TextInputEditText>(R.id.emailInput).text?.toString()?.trim().orEmpty()
+            val selectedRole = roles.selectedItem?.toString() ?: "Student"
+            startActivity(Intent(this, MainActivity::class.java)
+                .putExtra(MainActivity.EXTRA_DEMO_ROLE, selectedRole)
+                .putExtra(MainActivity.EXTRA_DEMO_EMAIL, email))
         }
     }
 }
