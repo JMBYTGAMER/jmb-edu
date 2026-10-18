@@ -6,7 +6,7 @@
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
         android:gravity="center_horizontal" android:orientation="vertical" android:padding="24dp">
         <ImageView android:layout_width="112dp" android:layout_height="112dp"
-            android:contentDescription="JMB EDU logo" android:src="@drawable/ic_jmb_edu" />
+            android:contentDescription="JMB EDU logo" android:src="@drawable/ic_jmb_edu_logo" />
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:layout_marginTop="14dp" android:text="JMB EDU" android:textColor="@color/jmb_navy"
             android:textSize="30sp" android:textStyle="bold" />

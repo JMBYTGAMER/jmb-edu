@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application android:allowBackup="false" android:label="JMB EDU"
-        android:icon="@drawable/ic_jmb_edu" android:roundIcon="@drawable/ic_jmb_edu"
+        android:icon="@drawable/ic_jmb_edu_logo" android:roundIcon="@drawable/ic_jmb_edu_logo"
         android:supportsRtl="true" android:theme="@style/Theme.JMBEDU">
         <activity android:name=".MainActivity" android:exported="false" />
         <activity android:name=".StudentActivity" android:exported="false" />
